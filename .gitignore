@@ -1,0 +1,22 @@
+# Kernel module and build output
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.symvers
+*.order
+.tmp_versions/
+*.cmd
+.*.cmd
+
+# Compiled userspace binaries (same name as their .c, inside each part directory)
+part?/part?
+*.out
+
+# Submission archives
+*.tar.bz2
+
+# OS
+.DS_Store
+Thumbs.db
