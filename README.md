@@ -8,10 +8,12 @@ Everything here is about one constraint: **the CODEC consumes 8,000 samples per 
 wait.** If the program stops producing samples — because it is polling a keyboard, or drawing to a
 screen — the audio glitches audibly. Most of the design follows from refusing to let that happen.
 
-> **Demo video:** *(to be added)*
->
-> This needs the physical board and a pair of speakers, so there is no recording in this README yet
-> — see [Why there is no demo here](#why-there-is-no-demo-here).
+**Demo video** — recorded on the board:
+
+<video src="https://github.com/RoaringRohan/de1-soc-piano/raw/main/assets/demo.mp4" controls width="720"></video>
+
+If the player does not load, [download the clip](assets/demo.mp4) (33s). **This one has sound** —
+it is the only way to judge whether the notes are in tune and whether the audio glitches under load.
 
 ## Making a note
 
@@ -112,7 +114,7 @@ On a DE1-SoC running the course Linux image, with speakers or headphones in the 
 `runall.sh` loads the kernel modules each part needs — audio, video, KEY, LEDR and stopwatch — in
 the right order, then builds and runs that part.
 
-## Why there is no demo here
+## Why it cannot be run anywhere else
 
 This is embedded work against physical hardware: an audio CODEC and a VGA controller at fixed
 addresses in a Cyclone V FPGA, reached from an ARM Cortex-A9 running Linux. It cannot run anywhere
@@ -121,7 +123,7 @@ else, and a container does not help. Nothing in this repository was executed dur
 It is also the project in this group where that bites hardest, because the output is *sound*. A
 screenshot would show a keyboard diagram and tell you nothing about whether the notes were in tune
 or whether the audio glitched — which is the whole engineering question. That is what the demo video
-is for, and it will be linked at the top of this README when it exists.
+at the top of this README is for; it was recorded on the hardware by the author, with the audio kept.
 
 ## A note on what is here
 
