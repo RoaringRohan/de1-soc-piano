@@ -10,7 +10,7 @@ screen — the audio glitches audibly. Most of the design follows from refusing 
 
 **Demo video** — recorded on the board:
 
-<video src="https://raw.githubusercontent.com/RoaringRohan/de1-soc-piano/main/assets/demo.mp4" controls width="720"></video>
+https://github.com/user-attachments/assets/1e389c14-647a-4ad1-8ae3-acc7fc1319bb
 
 If the player does not load, [download the clip](assets/demo.mp4) (33s). **This one has sound** —
 it is the only way to judge whether the notes are in tune and whether the audio glitches under load.
